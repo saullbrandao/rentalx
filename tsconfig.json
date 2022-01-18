@@ -1,12 +1,25 @@
 {
   "compilerOptions": {
-    "target": "es2016",                                  
-    "module": "commonjs",                                
-    "outDir": "./",                                   
-    "esModuleInterop": true,                             
+    "target": "es2016",
+    "module": "commonjs",
+    "outDir": "./",
+    "baseUrl": "./src",
+    "paths": {
+      "@modules/*": ["modules/*"],
+      "@config/*": ["config/*"],
+      "@shared/*": ["shared/*"],
+      "@errors/*": ["errors/*"],
+      "@utils/*": ["utils/*"],
+      "@middlewares/*": ["middlewares/*"],
+      "@routes/*": ["routes/*"]
+    },
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true                            
-  }
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", ".vscode"]
 }
