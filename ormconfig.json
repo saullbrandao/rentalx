@@ -7,8 +7,8 @@
   "entities": [
     "./src/modules/**/entities/*.ts"
   ],
-  "migrations": ["./src/shared/typeorm/migrations/*.ts"],
+  "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
   "cli": {
-    "migrationsDir": "./src/shared/typeorm/database/migrations"
+    "migrationsDir": "./src/shared/infra/typeorm/migrations"
   }
 }
