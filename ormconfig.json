@@ -1,6 +1,6 @@
 {
   "type": "postgres",
-  "host": "database",
+  "host": "localhost",
   "username": "docker",
   "password": "docker",
   "database": "rentalx",
