@@ -1,8 +1,8 @@
 import { Router } from "express";
 
-import { CreateRentalController } from "@modules/rentals/usecases/createRental/CreateRentalController";
-import { ListRentalsByUserController } from "@modules/rentals/usecases/listRentalsByUser/ListRentalsByUserController";
-import { ReturnRentalController } from "@modules/rentals/usecases/returnRental/ReturnRentalUseController";
+import { CreateRentalController } from "@modules/rentals/useCases/createRental/CreateRentalController";
+import { ListRentalsByUserController } from "@modules/rentals/useCases/listRentalsByUser/ListRentalsByUserController";
+import { ReturnRentalController } from "@modules/rentals/useCases/returnRental/ReturnRentalUseController";
 
 import { ensureAuthenticated } from "../middlewares/ensureAuthenticated";
 
