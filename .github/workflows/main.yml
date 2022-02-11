@@ -42,10 +42,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd ~/app/rentalx
-            yarn
-            ./node_modules/.bin/typeorm migration:run
-            pm2 restart rentalx_api
+            cd ~/app/rentalx && yarn && ./node_modules/.bin/typeorm migration:run && pm2 restart rentalx_api
             
             
           
